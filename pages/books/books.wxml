@@ -1,0 +1,30 @@
+<view class="container books">
+    <view class="searchBox">
+        <input class="search searchComm" placeholder="请输入书名" bindinput="searchInput" value="{{searchKey}}" auto-focus/>
+        <view class="searchComm del">
+            <text wx:if="{{searchKey}}" bindtap="clearSearch" class="iconfont icon-shanchu"></text>
+        </view>
+        <text class="iconfont icon-sousuo- searchComm trigSear" bindtap="searchBooks"></text>
+    </view>
+
+    <view wx:if="{{books.length > 0}}" class="resBox">
+        <view wx:for="{{books}}" class="bookBox" bindtap="godetail" data-index="{{index}}" wx:key="{{index}}" wx:for-index="index" wx:for-item="book">
+        <view class="bookText">
+            <view>
+            <text class="title">书名：</text><view class="titLimit">《{{book.title}}》</view>
+            </view>
+            <view>
+            <text class="title">作者：</text><view class="titLimit">{{book.author}}</view>
+            </view>
+            <view>
+            <text class="title">价格：</text><view class="titLimit">{{book.price}}</view>
+            </view>
+            <view>
+            <text class="title">出版时间：</text><text class="titLimit">{{book.pubdate}}</text>
+            </view>
+        </view>
+        <image class="bookPic" src="{{book.images.small}}"></image>
+        </view>
+    </view>
+    <view class="noData" wx:if="{{books.length <= 0}}">暂无数据</view>
+</view>

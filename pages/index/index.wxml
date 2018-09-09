@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container movies">
+  <view wx:if="{{movies.length > 0}}" class="latestNews">
+    <view wx:for="{{movies}}" class="movieBox" wx:key="{{index}}" wx:for-index="index" wx:for-item="movie">
+      <image class="movPic" src="{{movie.images.small}}"></image>
+      <view class="movText">
+        <view>
+          <text class="title">电影名称：</text><view class="titLimit">《{{movie.title}}》</view>
+        </view>
+        <view>
+          <text class="title">主演：</text><view class="titLimit">{{actorsArr[index]}}</view>
+        </view>
+        <view>
+          <text class="title">导演：</text><text class="titLimit">{{directors[index]}}</text>
+        </view>
+        <view>
+          <text class="title">类型：</text><text class="titLimit">{{genres[index]}}</text>
+        </view>
+        <view>
+          <text class="title">上映时间：</text><text class="titLimit">{{movie.year}}年</text>
+        </view>
+        <view bindtap="godetail" data-index="{{index}}">
+          <text class="detail">详情>></text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="noData" wx:if="{{movies.length <= 0}}">暂无数据</view>
+</view>

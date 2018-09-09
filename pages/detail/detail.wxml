@@ -1,0 +1,8 @@
+<view class="container detail">
+    <view wx:if="{{type === 'movie'}}" class="movieDetail">
+        电影
+    </view>
+    <view wx:if="{{type === 'book'}}" class="bookDetail">
+        书籍
+    </view>
+</view>

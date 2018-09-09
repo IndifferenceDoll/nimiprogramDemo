@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 829264 */
+    src: url('//at.alicdn.com/t/font_829264_x4em9qv9g6.eot');
+    src: url('//at.alicdn.com/t/font_829264_x4em9qv9g6.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_829264_x4em9qv9g6.woff') format('woff'),
+    url('//at.alicdn.com/t/font_829264_x4em9qv9g6.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_829264_x4em9qv9g6.svg#iconfont') format('svg');
+  }
+  
+  .iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-shanchu:before { content: "\e629"; }
+  
+  .icon-sousuo-:before { content: "\e60f"; }
+  
+  
+.books{
+    width: 100%;
+    height: 100%;
+}
+.books .searchBox{
+    width: 100%;
+    padding: 5px 20px;
+    background: #a2d4ec;
+    box-sizing: border-box;
+}
+.books .searchBox .searchComm{
+    background: white;
+    display: inline-block;
+    height: 60rpx;
+    line-height: 60rpx;
+    vertical-align: text-top;
+}
+.books .searchBox .search{
+    width: 84%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 26rpx;
+}
+.books .searchBox .del{
+    width: 8%;
+}
+.books .searchBox .del text{
+    font-size: 30rpx;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.books .searchBox .trigSear{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 8%;
+    font-size: 50rpx;
+}
+
+.books  .resBox{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.books .bookBox{
+    width: 100%;
+    height: 300rpx;
+    border-top:1px solid #ccc; 
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+  }
+.books .bookBox:nth-child(1){
+border-top:0; 
+}
+.books .bookPic{
+width: 180rpx;
+height: 100%;
+margin-right: 20px;
+}
+.books .bookText{
+flex: 1;
+height: 100%;
+font-size: 30rpx;
+padding-top: 10rpx;
+box-sizing: border-box;
+}
+.books .bookText view{
+    margin-bottom: 10rpx;
+}
+.books .bookText .title{
+color:#aaa;
+}
+.books .bookText .titLimit{
+display: inline-block;
+vertical-align: top;
+width: 300rpx;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+.books .bookText .detail{
+float: right;
+color: skyblue;
+margin-top: -15rpx;
+}
+.books .noData{
+text-align: center;
+color: #aaa;
+margin-top: 50%;
+}
