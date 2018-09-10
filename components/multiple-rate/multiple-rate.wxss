@@ -4,6 +4,9 @@
  * Email: 15986907592@163.com
  */
 
+ .multiple-rate,.multiple-rate view{
+   display: inline-block;
+ }
  .multiple-rate .star, .multiple-rate .star-o {
     width: 0;
     height: 0;
@@ -11,11 +14,11 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 10px solid rgb(247, 186, 42);
+    border-left: 20rpx solid transparent;
+    border-right: 18rpx solid transparent;
+    border-bottom: 15rpx solid rgb(247, 186, 42);
     transform: rotate(180deg);
-    margin: 0 5px;
+    margin: 0 8rpx;
   }
   
   .multiple-rate .star::after, .multiple-rate .star::before,
@@ -26,11 +29,11 @@
     color: red;
     position: absolute;
     display: inline-block;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 10px solid rgb(247, 186, 42);
-    top: -0px;
-    left: -12px;
+    border-left: 20rpx solid transparent;
+    border-right: 18rpx solid transparent;
+    border-bottom: 15rpx solid rgb(247, 186, 42);
+    top: -0rpx;
+    left: -18rpx;
   }
   
   .multiple-rate .star::after, .multiple-rate .star-o::after {
@@ -44,23 +47,23 @@
   }
   
   .multiple-rate .star-o {
-    border-bottom: 10px solid #ccc;
+    border-bottom: 15rpx solid #ccc;
   }
   
   .multiple-rate .star-o::after, .multiple-rate .star-o::before {
-    border-bottom: 10px solid #ccc;
+    border-bottom: 15rpx solid #ccc;
   }
   
   .heart,.heart-o {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    width: 12px;
-    height: 12px;
+    width: 18rpx;
+    height: 18rpx;
     background-color: red;
-    border-radius: 2px;
+    border-radius: 3rpx;
     transform: rotate(45deg);
-    margin: 0 10px;
+    margin: 0 15rpx;
   }
   
   .heart:before,.heart:after,.heart-o:before,.heart-o:after {
@@ -68,17 +71,17 @@
     position: absolute;
     display: inline-block;
     vertical-align: middle;
-    width: 12px;
-    height: 12px;
+    width: 18rpx;
+    height: 18rpx;
     background-color: red;
     border-radius: 50%;
-    top: 0px;
-    left: -6px;
+    top: 0rpx;
+    left: -9rpx;
   }
   
   .heart:after, .heart-o:after {
-    left: 0px;
-    top: -6px;
+    left: 0rpx;
+    top: -9rpx;
   }
   
   .heart-o {

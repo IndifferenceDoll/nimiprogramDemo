@@ -4,10 +4,18 @@
         <view class="mainBox">
             <view class="movDescr">
                 <multiple-rate rate="{{itemObj.rating.average}}" disabled="true"></multiple-rate>
-                <text>{{itemObj.rating.average}}</text>
+                <text class="rate">{{itemObj.rating.average}}</text>
+                <text class="rate">{{commentObj.total}}人评论</text>
+                <view class="someDescr">
+                    <text>{{descrObj.countries}}</text>／<text>{{descrObj.genres}}</text>／
+                    <text>{{descrObj.directors[0].name + '(导演)'}}</text>／<text>{{casts}}</text>／
+                    <text>{{descrObj.year + '（中国大陆）上映'}}</text>
+                </view>
             </view>
             <image class="movPic" src="{{itemObj.images.medium}}"></image>
         </view>
+
+        
     </view>
     <view wx:if="{{type === 'book'}}" class="bookDetail">
         书籍

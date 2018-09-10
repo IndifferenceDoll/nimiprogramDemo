@@ -20,6 +20,17 @@
     flex: 1;
     height: 100%;
 }
+.detail .movieDetail .mainBox .movDescr .rate{
+    display: inline-block;
+    margin-left: 10rpx;
+    font-size: 30rpx;
+}
+.detail .movieDetail .mainBox .movDescr .someDescr{
+    font-size: 30rpx;
+    color:#aaa;
+    margin-top: 20rpx;
+    line-height: 60rpx;
+}
 .detail .movieDetail .mainBox .movPic{
     width: 180rpx;
     height: 100%;

@@ -12,7 +12,8 @@ Page({
     commentObj:{},
     round:0,
     count:4,
-    total:0
+    total:0,
+    casts:''
   },
   onLoad: function () {
 
@@ -84,11 +85,16 @@ Page({
     })　　
   },
   requestDescription:function(id){
-    var url = `/rexxar/api/v2/elessar/subject/${id}`//简介
+    // var url = `/rexxar/api/v2/elessar/subject/${id}`//简介
+    var url = `/v2/movie/subject/${id}`
     return wxRequest(url,"GET",{},{}).then(res => {
       console.log(res)
+      var casts = res.data.casts.map(val=>{
+        return val.name
+      }).join('／')
       this.setData({
-        descrObj:res.data//缓存中的数据对象就是详情对象，直接赋值于itemObj
+        descrObj:res.data,//缓存中的数据对象就是详情对象，直接赋值于itemObj
+        casts:casts
       })
     })
   }
