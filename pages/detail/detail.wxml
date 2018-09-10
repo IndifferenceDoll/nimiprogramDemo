@@ -1,6 +1,13 @@
 <view class="container detail">
     <view wx:if="{{type === 'movie'}}" class="movieDetail">
-        电影
+        <view class="movTitle">{{itemObj.title}}</view>
+        <view class="mainBox">
+            <view class="movDescr">
+                <multiple-rate rate="{{itemObj.rating.average}}" disabled="true"></multiple-rate>
+                <text>{{itemObj.rating.average}}</text>
+            </view>
+            <image class="movPic" src="{{itemObj.images.medium}}"></image>
+        </view>
     </view>
     <view wx:if="{{type === 'book'}}" class="bookDetail">
         书籍
